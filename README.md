@@ -52,11 +52,11 @@ pip install -r requirements.txt
    ```bash
    python manage.py migrate
    ```
-3. **Iniciar el servidor:**
+3. **Iniciar el servidor en un puerto alternativo (para poder ejecutar ambos en paralelo):**
    ```bash
-   python manage.py runserver
+   python manage.py runserver 8080
    ```
-4. **Acceder a la página:** Abre tu navegador en [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+4. **Acceder a la página:** Abre tu navegador en [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
 
 ## Credenciales de Demostración
 
