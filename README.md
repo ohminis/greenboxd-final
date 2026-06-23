@@ -8,6 +8,18 @@ El repositorio contiene **dos versiones independientes** del proyecto para cumpl
 
 ---
 
+## Stack Tecnológico
+
+El proyecto está construido utilizando una arquitectura clásica de cliente-servidor con las siguientes tecnologías:
+
+*   **Backend:** Python 3, Django 5.x (Patrón MVT).
+*   **Base de Datos:** SQLite (integrada mediante el ORM de Django).
+*   **Frontend (UI/UX):** HTML5, CSS3 Nativo (con arquitectura de Design Tokens y Variables CSS), Bootstrap 5.3 (exclusivamente para el sistema de grillas/grid).
+*   **Integraciones Externas:** Consumo de FakeStoreAPI mediante la librería `requests` y recursos fotográficos de Unsplash.
+*   **Gestión de Entornos:** Entornos virtuales de Python (`venv`).
+
+---
+
 ## Requisitos Previos
 Es necesario tener instalado Python (versión 3.10 o superior recomendada).
 
