@@ -29,6 +29,28 @@ Antes de instruir a la IA para codificar la versión premium, se realizó una **
 2. Se estructuró un layout base (`mockup.html`) para validar la consistencia visual del "Mercado Orgánico Premium".
 3. Con este "plano" listo, se le entregó el CSS y las plantillas a la IA como instrucciones precisas. Esto permitió que la IA generara las vistas de Django respetando de forma matemática la identidad de la marca.
 
+### 2.3 El Prompt Estructurado (Ingeniería de Prompts)
+Para garantizar que la IA no alucinara ni tomara decisiones arquitectónicas genéricas, se construyó el siguiente *Zero-Shot Prompt* maestro:
+
+```text
+Actúa como un Desarrollador Full-Stack Senior experto en Python (Django 5) y Arquitectura UI/UX.
+
+Tu tarea es construir desde cero un proyecto llamado `greenboxd_ai` con una aplicación `tienda`. El proyecto es un e-commerce para una verdulería orgánica llamada "GreenBox". No uses Bootstrap para el diseño visual, solo para el sistema de grillas (grid).
+
+REQUERIMIENTOS DE BACKEND (Lógica y Modelos):
+1. Configura una base de datos SQLite independiente.
+2. Implementa un sistema de Autenticación de Usuarios (Registro, Login, Logout).
+3. Crea un modelo Consulta y un CRUD protegido para que los administradores gestionen usuarios.
+4. Desarrolla un Carrito de Compras en la Memoria de Sesión (request.session).
+5. Consume la FakeStoreAPI, mapeando al vuelo los títulos por verduras e imágenes de Unsplash, convirtiendo precios a ARS.
+
+REQUERIMIENTOS DE FRONTEND (Diseño Premium):
+1. Tipografía: Playfair Display y Outfit.
+2. Paleta: Crema cálido (#f7f4ec), Verde acento (#295c3f), Naranja acento (#e06036).
+3. Arquitectura CSS modular con Design Tokens.
+4. Diseño Premium: Glassmorphism en el navbar, tarjetas Bento-Grid (border-radius: 24px) y sombras difusas.
+```
+
 ---
 
 ## 3. Cuadro Comparativo: Sin IA vs. Con IA
